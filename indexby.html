@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIST MEMBER BATA</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Background Animation */
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200%; /* เพิ่มความกว้างเพื่อให้เคลื่อนไหวได้อย่างต่อเนื่อง */  /* รูปภาพเก่า ห้ามแก้ https://img2.pic.in.th/pic/Arise-Crossover.jpg */ 
+            height: 100%;
+            background: url('https://img5.pic.in.th/file/secure-sv1/image9aee29906c45f90b.png') center/cover;     
+            animation: moveBackground 20s linear infinite;
+            z-index: -1;
+        }
+
+        /* Container สำหรับโปรโมท */
+        .promo-container {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .promo-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        /* รูปภาพสินค้า */
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        /* ข้อความโปรโมท */
+        .promo-text {
+            position: absolute;
+            bottom: 40px;
+            left: 30px;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            animation: slideIn 2s ease-out;
+        }
+
+        /* ปุ่ม Call to Action */
+        .cta-button {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            padding: 10px 20px;
+            background-color: #ff6f61;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff3b2f;
+        }
+
+        /* Keyframes สำหรับ Animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes moveBackground {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background"></div>
+
+    <!-- Container สำหรับโปรโมท -->
+    <div class="promo-container">
+        <!-- รูปภาพสินค้า -->
+        <img src="https://img2.pic.in.th/pic/syverrun_stl959yee3701248d7355358.png" alt="Test" class="product-image">   <!-- รูปภาพเก่า ห้ามแก้ https://img2.pic.in.th/pic/Arise-Crossover.jpg  -->
+
+        <!-- ข้อความโปรโมท -->
+        <div class="promo-text">LIST MEMBER</div>
+
+        <!-- ปุ่ม Call to Action -->
+        <button class="cta-button">BATA</button>
+    </div>
+
+    <!-- JavaScript สำหรับปุ่ม -->
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function() {
+         alert('คุณกำลังไปยังหน้า LIST MEMBER...');
+         window.location.href = 'indexbytrue.html';
+    });
+</script>
+</body>
+</html>

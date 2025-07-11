@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern E-Commerce Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #000000;
+        }
+
+        /* Navigation */
+        nav {
+            background: #000000;
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: rgb(255, 255, 255);
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #0a0909;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://media.discordapp.net/attachments/1337060285890170961/1392948815077838900/image.png?ex=6871642d&is=687012ad&hm=92bbeceaf3cd5619051d8d4ed43cd0e96b7ea0c5225e35624ade0f870eef5d72&=&format=webp&quality=lossless&width=1521&height=856') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            background: #000000;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #ffffff;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: rgb(255, 255, 255);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info p {
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 4rem 2rem;
+            background: #ffffff;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: #ffffff;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .nav-links a {
+                margin: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation ห้ามแก้ข้อนี้โดยเด็ดขาด-->
+    <nav>  
+        <div class="nav-container">
+            <a href="#" class="logo">LIST MEMBER DEV</a>  
+            <div class="nav-links">
+                <a href="#home">HOME</a>
+                <a href="#products">HEAD</a>
+                <a href="#about">MEMBER</a>
+                <body>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1> WELCOME TO LIST MEMBER DEV </h1>
+            <p></p>
+            <a href="#products" class="btn">LIST MEMBER</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>HEAD</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://media.discordapp.net/attachments/1337060285890170961/1392956377395236904/499663895_671125892551873_4231300387736245855_n.jpg?ex=68716b38&is=687019b8&hm=e4f096aa2c462e0c19fca389b9d06dd94d58e0a0e62c23a79e212012db674eae&=&format=webp" alt="Product 1">
+                <div class="product-info">
+                    <h3>Insertq Rich</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/insertq.rich" class="btn">Facebook</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://media.discordapp.net/attachments/1337060285890170961/1392955815790641242/517465142_122198148932306518_1770458960618663322_n.png?ex=68716ab2&is=68701932&hm=71d1cf4e7109959faf4e3e927161b7c0dcd415ebd08f810c3eeff98877041fa3&=&format=webp&quality=lossless&width=350&height=350" alt="Product 2">
+                <div class="product-info">
+                    <h3>Monkeyx Rankone</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/monkeysss.Store" class="btn">Facebook</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://media.discordapp.net/attachments/1337060285890170961/1392955804537065583/517502841_593369257169208_4557205139466227436_n.jpg?ex=68716aaf&is=6870192f&hm=2f5318e7d5da290dc9faa3e1afb6597f282ab1cf6a87120502ef2f3ee4bf558a&=&format=webp&width=960&height=960" alt="Product 3">
+                <div class="product-info">
+                    <h3>Highx Rankone</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/highx.raipao.2024" class="btn">Facebook</a>                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2></h2>
+        <p>
+           DEV HIGHX DEV MONKEYX
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; </p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add to cart functionality (basic)   // ห้ามแก้นะจ๊ะ by.dev highx
+       // document.querySelectorAll('.product-card .btn').forEach(button => {
+         //   button.addEventListener('click', function(e) {
+           //     e.preventDefault();
+             //   alert('ling facebook');
+          //  });
+       // });
+    </script>
+</body>
+</html>
+<!-- Products Section -->
+    <section id="products" class="products">
+        <h2>MEMBER</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393165225854898326/504997418_677928128417496_5832113938566683276_n.png?ex=68722db9&is=6870dc39&hm=9594411610702abc5733bd44b6f1182e79c886b59bd0016a60ca0ce160a33416&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Jxme Rankone</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/jame.mythical.2024?locale=th_TH" class="btn">Facebook</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393165842794938379/514279605_704272565831235_464312647540601762_n.png?ex=68722e4c&is=6870dccc&hm=e204d231364ff7e6bd07bcaa23d93e976e02f0a2cecbe4ba35a393169728b458&" alt="Product 2">
+                <div class="product-info">
+                    <h3>Lucky Fitzroy</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/lucky.telford?locale=th_TH" class="btn">Facebook</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393166065302765688/469894186_1314608339720465_8302117871165957496_n.png?ex=68722e81&is=6870dd01&hm=281249bb6a8910caa6699e525e588e0a0c96d0a0ae28a8ba432664b4401f6706&" alt="Product 3">
+                <div class="product-info">
+                    <h3>มาวิน เทมเพส</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/marvin.tempest.2024?locale=th_TH" class="btn">Facebook</a>
+                </div>
+            </div>
+                <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393166391359701022/511667136_122136628286672258_2898551600581619182_n.png?ex=68722ecf&is=6870dd4f&hm=79870bf4498f81cf8918af85aeabd3f9ecfef0d5f166f3e5a191c38452f38512&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Soju KingLayout</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/jame.mythical.2024?locale=th_TH" class="btn">Facebook</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393177995832987688/f7778475-083f-42de-ab20-8a49d0db421b.png?ex=6872399e&is=6870e81e&hm=742808a43918c03f9cd09277ea2d78f5be14ae2dc05eae0031cdcc367f4506da&" alt="Product 2">
+                <div class="product-info">
+                    <h3>Denis Conceptx</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/denis.conceptx?locale=th_TH" class="btn">Facebook</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393172324236394576/505918223_686900857475092_7089769273519578169_n.png?ex=68723455&is=6870e2d5&hm=2a94aa5d64ca10c91c9800abd922f43678df87c52ed9b0e089bd08a3daf9c561&" alt="Product 3">
+                <div class="product-info">
+                    <h3>น้องหลอด แบดจาด</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/kritsad.xi?locale=th_TH" class="btn">Facebook</a>
+                  </div>  
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393173067496427582/E0B8AAE0B8B1E0B895E0B8A7E0B98CE0B980E0B8A5E0B8B5E0B989E0B8A2E0B887-14-02-65-1024x577.png?ex=68723507&is=6870e387&hm=5a65833be6a8e3a15afb9ecad841c6e944e8d935b9a15bd2864ee5d02e04f1ab&" alt="Product 1">
+                <div class="product-info">
+                    <h3>มาเดล อยากกินไก่</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/mimixyakkinki?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393174444746342450/image.png?ex=6872364f&is=6870e4cf&hm=9f7cbaeee98c2f5269b2a7d52776d42a040027b6cd0448d657b2fd393fb197a1&" alt="Product 1">
+                <div class="product-info">
+                    <h3>น้องต้มจืด นางฟ้าโรบ็อก</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/nxng.tm.cud.d.n.henux?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393174884858855544/484804974_1249506560227952_2698050601491198662_n.png?ex=687236b8&is=6870e538&hm=c5412a012eb5b52626676d7f80a13d315d35460d7232a1738f0db1c431de7bee&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Inter Wolford</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/interq.x?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393175376523558962/500375444_122236715798235379_7830593554772808607_n.png?ex=6872372d&is=6870e5ad&hm=02a2193552ab62db96635826a381e72f67a5a6aab3a5c98c6f83a5201b71d17a&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Rain Badjad</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/rain.savage.2024?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://media.discordapp.net/attachments/1273637775845097555/1301098703620276244/20241030150736_1.png?ex=68721b18&is=6870c998&hm=aba0507dffc5dda601be53041d7d9bef986079b7d2c25ad4e9512c9301a179b3&=&format=webp&quality=lossless&width=1088&height=1088" alt="Product 1">
+                <div class="product-info">
+                    <h3>Martin Diffstyle</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/martin.diffstyle?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393176757955330078/461455513_122119375448452895_6646993328423493973_n.png?ex=68723877&is=6870e6f7&hm=277adf19ca695334cc6d2678a63a99e34aedf67b82d392166f3efd0bebf680db&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Thunder Tempest</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/thunder.tempest.2025?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393178611044978793/468670584_122150440688332375_4154171452559022723_n.png?ex=68723a30&is=6870e8b0&hm=3f6f0d6e8183e4d23129a810105ca4e268e86132f659be95f7a735eff318fcb3&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Tong Cargo</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/tong.cargo?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://media.discordapp.net/attachments/1273637775845097555/1302193255219331113/20241102152557_1.png?ex=687221f9&is=6870d079&hm=9e03a7893e166e93ec5c94aa4f609a1ad484c401afaa09c604aa72d51f8350aa&=&format=webp&quality=lossless&width=1088&height=1088" alt="Product 1">
+                <div class="product-info">
+                    <h3>waed Tempest</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/prosumeth.pe?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393181072422080624/511307463_122099954462924326_7677040764229842779_n.png?ex=68723c7b&is=6870eafb&hm=6952719ddef243febe7eee7e9d3dab55abe64b78b76f44cf081bfac55cd647e5&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Mekk Yamal</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/profile.php?id=61577729793378&locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393181682298916894/492589391_705569192140600_7295779762847953507_n.png?ex=68723d0d&is=6870eb8d&hm=a807030fa99f29875c7cbcf843cff07a3360f4f80e21f91445bcbe9123dfa21e&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Greenner Vanguard</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/greenner.vanguard?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393182131727106128/495286040_122207465804060705_8749985638117274101_n.png?ex=68723d78&is=6870ebf8&hm=6c7a8cd90d8c270a0ddb4ecf551e9050e190adb03bfeeab6d17453f668f9399a&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Arno Broke</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/jackeyy.white?comment_id=Y29tbWVudDo3MDU1NjkxODg4MDcyNjdfOTkwNTI1Mjg5OTQ2MzE2&locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.discordapp.com/attachments/1351206750811852874/1393182792438775928/image.png?ex=68723e15&is=6870ec95&hm=f632ef3ca6d800c2105ec0b0dcc7612cafc0399cc4ac94b277d35bc0e1b0f9ad&" alt="Product 1">
+                <div class="product-info">
+                    <h3>Halin Holyshit</h3>
+                    <p>DEV</p>
+                    <a href="https://web.facebook.com/halin.vanguard?locale=th_TH" class="btn">Facebook</a>
+                  </div>                
+            </div>
